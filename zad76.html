@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Zad 76</title>
+	<meta charset="utf-8"></meta>
+</head>
+<body>
+<div style="color:black;font-size:36px;">
+<script language="JavaScript">
+	var a = prompt("Wczytaj pierwsza liczbe : ","");
+	l1_Slo = parseFloat(a);
+	var b = prompt("Wczytaj druga liczbe : ","");
+	l2_Slo = parseFloat(b);
+	if(l1_Slo<l2_Slo)
+	{
+	for(i=0;i<=l2_Slo;i++)
+	{
+	if(i%2==1)
+	{
+	document.write("<span style=\"font-size:30px;color:green;\">"+i);
+	if(i!=l2_Slo-1)
+	{
+	document.write(", </span>");
+	}
+	}
+	}
+	}
+	if(l1_Slo>l2_Slo)
+	{
+	for(i=l1_Slo;i>=1;i--)
+	{
+	if(i%2==1)
+	{
+    document.write("<span style=\"font-size:15px;color:blue;\">"+i);
+	if(i!=1)
+	{
+	document.write(", </span>");
+	}
+	}
+	}
+	}
+	if(l1_Slo==l2_Slo)
+	{
+	confirm("Brak obliczen");
+	document.write("Brak obliczen");
+	}
+</script>
+</div>
+</body>
+</html>
